@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styles from './intro.module.css';
 export default function Intro() {
   return (
-       <div className={styles.intro}></div>
+    <Fragment>
+      <div className={styles.intro}></div>
+      <div className={styles.intro2}></div>
+    </Fragment>
   )
 }

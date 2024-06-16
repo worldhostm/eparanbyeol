@@ -6,3 +6,11 @@
     /* background-size: contain; */
     background-repeat: no-repeat;
 }
+.intro2{
+    background-image: url('/asdas.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
