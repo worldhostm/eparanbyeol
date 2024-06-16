@@ -1,16 +1,40 @@
-.intro{
-    background-image: url('/intro.png');
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-    /* background-size: contain; */
-    background-repeat: no-repeat;
-}
-.intro2{
-    background-image: url('/asdas.png');
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-    /* background-size: contain; */
-    background-repeat: no-repeat;
-}
+/* intro.module.css */
+
+.intro {
+    position: relative;
+    height: 30vh; /* Adjust height as needed */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .videoBackground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensure video stays in the background */
+  }
+  
+  .title {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%; /* Center vertically in the parent div */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure exact centering */
+    color: white; /* Set text color */
+    font-size: 2.5rem; /* Adjust text size as needed */
+    text-align: center;
+    font-weight: 1000;
+    z-index: 10; /* Higher z-index to ensure it appears above the video */
+  }
+  
+  .intro2 {
+    height: 50vh; /* Adjust height as needed */
+    width: 100%;
+    background-color: #f2f2f2; /* Example background color */
+    background-image: url('/page1.png');
+  }
+  
