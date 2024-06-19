@@ -1,12 +1,16 @@
 /* intro.module.css */
+.container{
+  width: 100vw;
+  height: 100vh;
+}
 
 .intro {
     position: relative;
     height: 30vh; /* Adjust height as needed */
     width: 100%;
     overflow: hidden;
+    border: 1px solid black;
   }
-  
   .videoBackground {
     position: absolute;
     right: 0;
