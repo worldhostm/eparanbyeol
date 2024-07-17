@@ -3,6 +3,18 @@ import styles from './intro.module.css';
 import SwiperComp from '@/app/_components/SwiperComp';
 
 export default function Intro() {
+  // let imageSources = [
+  //   {name:'/intro/poultryfarm.jpeg'},
+  //   {name:'/intro/cattleshed.jpeg'},
+  //   {name:'/intro/cattle2.jpeg'},
+  //   {name:'/intro/pigfarm.jpeg'}
+  // ];
+  let imageSources = [
+    '/intro/poultryfarm.jpeg',
+    '/intro/cattleshed.jpeg',
+    '/intro/cattle2.jpeg',
+    '/intro/pigfarm.jpeg'
+  ];
   return (
     <Fragment>
       <div className={styles.container}>
@@ -36,7 +48,7 @@ export default function Intro() {
             </div>
           </div>
           <div className={styles.content2}>
-            <SwiperComp />
+            <SwiperComp imgs={imageSources}/>
           </div>
         </div>
       </div>

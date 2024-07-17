@@ -17,8 +17,8 @@ export default function Header() {
           <div className={styles.contentContainer}>
             <Link href={'/intro'}>회사소개</Link>
             <Link href={'/leaflet'}>사업분야</Link>
-            <Link href={'/leaflet'}>연구개발</Link>
-            <Link href={'/leaflet'}>맞춤형솔루션</Link>
+            <Link href={'/goal'}>지향목표</Link>
+            <Link href={'/solution'}>맞춤형솔루션</Link>
             <Link href={'/leaflet'}>커뮤니티</Link>
           </div>
         </div>

@@ -2,7 +2,7 @@
 import React from 'react';
 // Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination,Autoplay } from 'swiper/modules';
 
 // Swiper styles
 import 'swiper/css'; // core Swiper
@@ -14,30 +14,33 @@ import 'swiper/css/scrollbar';
 import styles from './swipercomp.module.css';
 import Image from 'next/image';
 
-export default function SwiperComp(){
+interface Props {
+  imgs : string[]
+  auto ?: boolean
+}
+
+export default function SwiperComp({imgs,auto}:Props){
   return (
     <Swiper
       className={styles['swiper-container']}
-      // Swiper instances parameters
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction:false // 스와이프 후에도 자동재생 유지
+      }}
+      loop={true}
     >
-      <SwiperSlide>
-        <Image src={'/intro/poultryfarm.jpeg'} width={600} height={600} alt=''/>
-      </SwiperSlide>
-      <SwiperSlide>        
-        <Image src={'/intro/cattleshed.jpeg'} width={600} height={600} alt=''/>
-      </SwiperSlide>
-      <SwiperSlide>        
-        <Image src={'/intro/cattle2.jpeg'} width={600} height={600} alt=''/>
-      </SwiperSlide>
-      <SwiperSlide>        
-        <Image src={'/intro/pigfarm.jpeg'} width={600} height={600} alt=''/>
-      </SwiperSlide>
-      {/* 추가적인 슬라이드 */}
+      {imgs&&
+        imgs.map((e)=>
+          <SwiperSlide>
+            <Image src={e} width={600} height={600} alt=''/>
+          </SwiperSlide>
+        )
+      }
     </Swiper>
   );
 };

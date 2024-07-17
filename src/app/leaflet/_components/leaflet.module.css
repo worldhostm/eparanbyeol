@@ -1,0 +1,62 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.content{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.flex1{
+  flex: 0.5;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+.innerflex1{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.innerflex2{
+  flex: 1;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex2{
+  flex: 1.5;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.inner2flex1{
+  flex:1;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner2flex2{
+  flex:1;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headtext1{
+  font-size: 24px;
+  color: blue;
+}
+.buzfield{
+
+}
+.buzfield > li{
+  list-style: none;
+  font-weight: 600;
+}
