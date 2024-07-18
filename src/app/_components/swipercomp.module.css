@@ -1,3 +1,25 @@
 .swiper-container{
     width: 600px;
+    height: 200px;
+}
+
+.swiper-button-next {
+  position: absolute; /* 절대 위치 설정 */
+  top: 10px; /* 상단에서부터의 거리 */
+  right: 10px; /* 오른쪽에서부터의 거리 */
+  color: #fff; /* 아이콘 색상 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: red;
+}
+
+/* 이전 버튼 스타일 */
+.swiper-button-prev {
+  color: red;
+  position: absolute; /* 절대 위치 설정 */
+  top: 10px; /* 상단에서부터의 거리 */
+  right: 46px; /* 오른쪽에서부터의 거리 (다음 버튼 옆에 위치) */
+  color: #fff; /* 아이콘 색상 */
+  background-size: contain;
+  background-repeat: no-repeat;
 }

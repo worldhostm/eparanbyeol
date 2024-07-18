@@ -3,7 +3,6 @@ import React from 'react';
 // Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination,Autoplay } from 'swiper/modules';
-
 // Swiper styles
 import 'swiper/css'; // core Swiper
 import 'swiper/css/bundle'; // core Swiper
@@ -23,21 +22,24 @@ export default function SwiperComp({imgs,auto}:Props){
   return (
     <Swiper
       className={styles['swiper-container']}
-      modules={[Navigation, Pagination, Autoplay]}
+      modules={[
+        Navigation
+        // , Autoplay
+      ]}
       spaceBetween={50}
-      slidesPerView={1}
+      slidesPerView={3}
       navigation
-      pagination={{ clickable: true }}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction:false // 스와이프 후에도 자동재생 유지
-      }}
-      loop={true}
+      // pagination={{ clickable: true }}
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction:false // 스와이프 후에도 자동재생 유지
+      // }}
+      // loop={true}
     >
       {imgs&&
-        imgs.map((e)=>
-          <SwiperSlide>
-            <Image src={e} width={600} height={600} alt=''/>
+        imgs.map((e,index)=>
+          <SwiperSlide key={'slide$$' + index}>
+            <Image src={e} width={150} height={150} alt=''/>
           </SwiperSlide>
         )
       }

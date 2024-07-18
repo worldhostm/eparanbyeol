@@ -1,0 +1,65 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.cntContainer{
+  display: flex;
+  height: 100vh;
+}
+.titleContainer{
+  display: flex;
+}
+.cntflex1{
+  flex: 1.2;
+  height: inherit;
+  background-color: white;
+  position: relative;
+}
+.cntflex2{
+  height: inherit;
+  flex:0.8;
+  background-color: red;
+}
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10px;
+  display: inline-block;
+}
+
+.redGradient {
+  background-image: linear-gradient(to bottom right, red, orange);
+  top: 40%;
+  left: 0;
+}
+
+.brownGradient {
+  background-image: linear-gradient(to bottom right, brown, sandybrown);
+  top: 50%;
+  left: 20%;
+}
+
+.blueGradient {
+  background-image: linear-gradient(to bottom right, blue, lightblue);
+  top: 40%;
+  left: 40%;
+}
+
+.mintGradient {
+  background-image: linear-gradient(to bottom right, mintcream, aquamarine);
+  top: 25%;
+  left: 60%;
+}
+
+.limeGradient {
+  background-image: linear-gradient(to bottom right, limegreen, yellowgreen);
+  top: 10%;
+  left: 70%;
+}
+
+.imgcontent > img{
+  border-radius: 50%;
+  top: 20%;
+}

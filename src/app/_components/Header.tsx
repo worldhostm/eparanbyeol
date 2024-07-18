@@ -19,7 +19,7 @@ export default function Header() {
             <Link href={'/leaflet'}>사업분야</Link>
             <Link href={'/goal'}>지향목표</Link>
             <Link href={'/solution'}>맞춤형솔루션</Link>
-            <Link href={'/leaflet'}>커뮤니티</Link>
+            <Link href={'/commu'}>커뮤니티</Link>
           </div>
         </div>
     </Fragment>
