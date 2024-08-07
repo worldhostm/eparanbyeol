@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 // Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination,Autoplay } from 'swiper/modules';
@@ -16,9 +16,20 @@ import Image from 'next/image';
 interface Props {
   imgs : string[]
   auto ?: boolean
+  useHover ?:boolean 
+}
+interface FarmInfo {
+  name_ko: string;
+  name_eng: string;
+  description_ko: string;
+  description_eng: string;
+  url: string;
+  img: string;
 }
 
-export default function SwiperComp({imgs,auto}:Props){
+
+export default function SwiperComp({imgs,auto, useHover}:Props){
+  const [isHover, setisHover] = useState< boolean | null >(null);
   return (
     <Swiper
       className={styles['swiper-container']}
@@ -26,9 +37,9 @@ export default function SwiperComp({imgs,auto}:Props){
         Navigation
         // , Autoplay
       ]}
-      spaceBetween={50}
+      spaceBetween={1}
       slidesPerView={3}
-      navigation
+      // navigation
       // pagination={{ clickable: true }}
       // autoplay={{
       //   delay: 2500,
@@ -38,8 +49,20 @@ export default function SwiperComp({imgs,auto}:Props){
     >
       {imgs&&
         imgs.map((e,index)=>
-          <SwiperSlide key={'slide$$' + index}>
-            <Image src={e} width={150} height={150} alt=''/>
+          <SwiperSlide 
+          key={'slide$$' + index}
+          onMouseEnter={()=>setisHover(true)}
+          // onMouseLeave={()=>setisHover(false)}
+          >
+            <Image src={e} width={300} height={350} objectFit='true' alt=''/>
+            {
+              useHover && isHover ? 
+              <div className={styles.overimage}>
+                12312312123
+                123123121231231231212312312312123
+              </div>
+              :<></>
+            }
           </SwiperSlide>
         )
       }

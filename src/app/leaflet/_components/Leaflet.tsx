@@ -49,7 +49,11 @@ export default function Leaflet() {
             2
             <div className={styles.inner2flex1}>inner2flex1</div>
             <div className={styles.inner2flex2}>
-            <SwiperComp imgs={arr} auto={true}/>
+            <SwiperComp 
+            imgs={arr} 
+            auto={true}
+            useHover={true}
+            />
             </div>
         </div>
       </div>

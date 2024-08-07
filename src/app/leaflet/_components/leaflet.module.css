@@ -44,7 +44,7 @@
 }
 .inner2flex2{
   flex:1;
-  background-color: gold;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;

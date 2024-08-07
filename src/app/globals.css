@@ -111,3 +111,9 @@ a {
 /* globals.css */
 .swiper-button-next {
 }
+.swiper-slide{
+  position: relative;
+}
+.swiper-slide > img{
+  border-radius: 8px;
+}
