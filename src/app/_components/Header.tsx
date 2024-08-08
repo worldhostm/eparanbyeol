@@ -19,6 +19,7 @@ export default function Header() {
             <Link href={'/greet'}>인사말</Link>
             <Link href={'/leaflet'}>사업분야</Link>
             <Link href={'/goal'}>지향목표</Link>
+            <Link href={'/benefit'}>제품의 원리</Link>
             <Link href={'/solution'}>맞춤형솔루션</Link>
             <Link href={'/commu'}>커뮤니티</Link>
           </div>
