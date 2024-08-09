@@ -5,12 +5,13 @@
     flex-direction: row;
     gap: 30px;
     background: #464242;
+    white-space: nowrap;
 }
 .contentContainer{
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     color: white;
 }
 .imgDiv{

@@ -9,11 +9,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import sty from './commu.module.css';
 import 'animate.css';
+import AnimatedNumber from '@/app/_components/AnimatedNumber';
 
 export default function Commu() {
   return (
     <div className={sty.container}>
-      <h1
+      {/* <h1
       className={sty.h1text + ' '+ 'animate__animated animate__bounceOutDown'}
       >
         123213123
@@ -49,7 +50,8 @@ export default function Commu() {
             className={sty.text}>
               3
             </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+      <AnimatedNumber start={0} end={100} duration={5000} />
     </div>
   )
 }

@@ -22,6 +22,7 @@ export default function Header() {
             <Link href={'/benefit'}>제품의 원리</Link>
             <Link href={'/solution'}>맞춤형솔루션</Link>
             <Link href={'/commu'}>커뮤니티</Link>
+            <Link href={'/certificate'}>인증서</Link>
           </div>
         </div>
     </Fragment>
