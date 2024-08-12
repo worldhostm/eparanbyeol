@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react';
 import styles from './intro.module.css';
 import SwiperComp from '@/app/_components/SwiperComp';
+import Certificates from '@/app/certificate/_components/Certificates';
+import Solution from '@/app/solution/_components/Solution';
+import ZeroToNumber from '@/app/_components/ZeroToNumber';
 
 export default function Intro() {
   // let imageSources = [
@@ -53,11 +56,11 @@ export default function Intro() {
                 Your browser does not support the video tag.
               </video>
             <div className={styles.title}>
-              우리는 고객의 목표에 맞추어 최적의 솔루션을 제공합니다.
+              우리는 고객의 목표에 맞추어<br/> 최적의 솔루션을 제공합니다.
             </div>
         </div>
         <div className={styles.contentsContainer}>
-          <div className={styles.content1}>
+          {/* <div className={styles.content1}>
             <div className={styles.category}>
               <div className={styles.maincategory}>
                사업분야
@@ -75,11 +78,23 @@ export default function Intro() {
                 4.펫 및 렙타일 kit
               </div>
             </div>
-          </div>
+          </div> */}
           <div className={styles.content2}>
+            <div className={styles.content2Title}>
+              <div>
+                Solutions & Services
+              </div>
+              <div className={styles.content2description}>
+                설명을 적어주세요설명을 적어주세요설명을 적어주세요<br/>
+                설명을 적어주세요
+              </div>
+            </div>
             <SwiperComp imgs={imageSources.map(e=>e.img)}/>
           </div>
         </div>
+          <Certificates />
+          <Solution />
+          <ZeroToNumber />
       </div>
     </Fragment>
   );

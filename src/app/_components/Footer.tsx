@@ -58,18 +58,19 @@ export default function Footer() {
       className={styles.content} 
       key={index}
       style={{
-        backgroundColor : 
-          index === 0
-        ? '#D5D5D5'
-        : index === 1
-        ? '#BDBDBD'
-        : index === 2
-        ? '#AFE1FF'
-        : index === 3
-        ? '#BCE55C'
-        : index === 4
-        ? '#F29661'
-        : '#FAFAFA'
+        // backgroundColor : '#D5D5D5'
+
+        //   index === 0
+        // ? '#D5D5D5'
+        // : index === 1
+        // ? '#BDBDBD'
+        // : index === 2
+        // ? '#AFE1FF'
+        // : index === 3
+        // ? '#BCE55C'
+        // : index === 4
+        // ? '#F29661'
+        // : '#FAFAFA'
       }}
       >
         <div 

@@ -3,16 +3,18 @@
     height: 5vw;
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    background: #464242;
+    gap: 50px;
+    background: white;
+    color: black;
     white-space: nowrap;
+    font-family: 'Pretendard';
+    font-weight: 700;
 }
 .contentContainer{
     width: 100%;
     display: flex;
     align-items: center;
     gap: 50px;
-    color: white;
 }
 .imgDiv{
     border-radius: 48px;
@@ -30,5 +32,4 @@
     align-items: center;
 }
 .logoText{
-  color: white;
 }

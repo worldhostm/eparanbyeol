@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 20px;
 }
 .titleContainer{
   width: 100%;
@@ -39,4 +39,11 @@
 .title{
   font-size: 32px;
   font-weight: 700;
+}
+
+@media (min-width:768px) and (max-width:1200px){
+  .contentNode{
+    width: 30vw;
+    height: 45vw;
+  }
 }

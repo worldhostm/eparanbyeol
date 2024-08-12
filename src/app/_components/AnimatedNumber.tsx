@@ -4,8 +4,11 @@ interface Props {
   start:number
   end:number
   duration:number
+  color?:string
+  fontbold?:boolean
+  size?:number
 }
-const AnimatedNumber = ({ start, end, duration }:Props) => {
+const AnimatedNumber = ({ start, end, duration,color,fontbold,size }:Props) => {
     const [value, setValue] = useState(start); // 상태로 현재 값을 관리
 
     useEffect(() => {
@@ -24,7 +27,13 @@ const AnimatedNumber = ({ start, end, duration }:Props) => {
         window.requestAnimationFrame(step);
     }, [start, end, duration]); // 의존성 배열에 start, end, duration 추가
 
-    return <div>{value}</div>; // 현재 값 렌더링
+    return <div
+      style={{
+        color:color,
+        fontWeight:fontbold ? 700 : '',
+        fontSize : size
+      }}
+    >{value}</div>; // 현재 값 렌더링
 };
 
 export default AnimatedNumber;

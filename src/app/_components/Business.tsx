@@ -52,7 +52,7 @@ export default function Business() {
                         </div>
                       </div>
                       <div className={sty.subText2}>
-                        ====GO
+                        버튼자리
                       </div>
                     </div>
                 </div>
