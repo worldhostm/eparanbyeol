@@ -34,8 +34,11 @@ export default function Business() {
         </div>
         <div className={sty.contentContainer}>
           {
-            imgArr && imgArr.map(e=>
-              <div className={sty.tileDiv}>
+            imgArr && imgArr.map((e,idx)=>
+              <div 
+              className={sty.tileDiv}
+              key={'contentNode'+idx+ '$$'}
+              >
                 <div className={sty.upper}>
                     <Image src={e.img} width={413} height={317} alt=""/>
                 </div>

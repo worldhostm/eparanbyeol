@@ -21,8 +21,11 @@ export default function Certificates() {
         </div>
         <div className={sty.contentContainer}>
             {
-             certificates && certificates.map(e=>
-              <div className={sty.contentNode}>
+             certificates && certificates.map((e,idx)=>
+              <div 
+              className={sty.contentNode}
+              key={'contentNode'+idx+ '$$'}
+              >
                   <Image src={'/certificate/' + e.img} width={420} height={600} alt="certificates" />
               </div>
              )
