@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output:'export'
-  ,basePath:'/'
+  ,basePath:'/eparanbyeol',
+  reactStrictMode:true
 };
 
 export default nextConfig;
