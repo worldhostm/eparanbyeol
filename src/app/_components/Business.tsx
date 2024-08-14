@@ -39,8 +39,13 @@ export default function Business() {
               className={sty.tileDiv}
               key={'contentNode'+idx+ '$$'}
               >
-                <div className={sty.upper}>
-                    <Image src={e.img} width={413} height={317} alt=""/>
+                <div 
+                className={sty.upper}
+                style={{
+                  backgroundImage: `url(${e.img})`
+                }}
+                >
+                    {/* <Image src={e.img} width={413} height={317} alt=""/> */}
                 </div>
                 <div className={sty.under}>
                     <div className={sty.subTitle}>
