@@ -54,7 +54,17 @@ export default function SwiperComp({imgs,auto, useHover}:Props){
           onMouseEnter={()=>setisHover(true)}
           // onMouseLeave={()=>setisHover(false)}
           >
-            <Image src={e} width={300} height={350} objectFit='true' alt=''/>
+            <div
+            style={{
+              backgroundImage:`url(${e})`,
+              width:'300px',
+              height:'350px',
+              borderRadius:'16px',
+            }}
+            >
+
+            </div>
+            {/* <Image src={e} width={300} height={350} objectFit='true' alt=''/> */}
             {
               useHover && isHover ? 
               <div className={styles.overimage}>

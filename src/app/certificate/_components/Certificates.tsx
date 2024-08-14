@@ -25,8 +25,11 @@ export default function Certificates() {
               <div 
               className={sty.contentNode}
               key={'contentNode'+idx+ '$$'}
+              style={{
+                backgroundImage:`url(/certificate/${e.img})`,
+              }}
               >
-                  <Image src={'/certificate/' + e.img} width={420} height={600} alt="certificates" />
+                  {/* <Image src={'/certificate/' + e.img} width={420} height={600} alt="certificates" /> */}
               </div>
              )
             }

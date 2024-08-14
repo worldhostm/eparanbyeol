@@ -26,15 +26,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-
 }
 .contentNode{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 440px;
-  height: 640px;
-  background-color: #FAFAFA;
+  width:420px;
+  height:600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .title{
   font-size: 32px;
