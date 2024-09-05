@@ -4,10 +4,10 @@ import SwiperComp from '@/app/_components/SwiperComp';
 
 export default function Leaflet() {
   let arr=[
-     '/busi/image79.png'
-    ,'/busi/image80.jpeg'
-    ,'/busi/image81.jpeg'
-    ,'/busi/image83.jpeg'
+     'frontend/busi/image79.png'
+    ,'frontend/busi/image80.jpeg'
+    ,'frontend/busi/image81.jpeg'
+    ,'frontend/busi/image83.jpeg'
   ];
   return (
     <div className={styles.container}>
