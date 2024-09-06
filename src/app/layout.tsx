@@ -18,7 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-        <body>
+        <body
+        style={{
+          width:'100%',
+          display:'flex',
+          justifyContent:'center',
+          alignContent:'center',
+          flexDirection:'column',
+        }}
+        >
         <Header />
         {children}
         <Footer />
