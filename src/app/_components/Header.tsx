@@ -8,10 +8,10 @@ export default function Header() {
     <Fragment>
         <div className={styles.container}>
           <div className={styles.logoContainer}>
-            <div className={styles.imgDiv}></div>
+            {/* <div className={styles.imgDiv}></div> */}
             <div className={styles.logoText}>
               <p>파란별TEC</p>
-              <p>paranbyeol</p>
+              {/* <p>paranbyeol</p> */}
             </div>
           </div>
           <div className={styles.contentContainer}>

@@ -4,16 +4,16 @@
   "private": true,
   "homepage": "https://worldhostm.github.io/eparanbyeol/",
   "scripts": {
-    "dev": "next dev -p 3001 && open http://localhost:3001/frontend",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy" : "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "next": "14.2.3",
+    "next": "^14.2.16",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.1.4"
