@@ -7,10 +7,10 @@ import ZeroToNumber from '@/app/_components/ZeroToNumber';
 
 export default function Intro() {
   // let imageSources = [
-  //   {name:'/frontend/intro/poultryfarm.jpeg'},
-  //   {name:'/frontend/intro/cattleshed.jpeg'},
-  //   {name:'/frontend/intro/cattle2.jpeg'},
-  //   {name:'/frontend/intro/pigfarm.jpeg'}
+  //   {name:'/intro/poultryfarm.jpeg'},
+  //   {name:'/intro/cattleshed.jpeg'},
+  //   {name:'/intro/cattle2.jpeg'},
+  //   {name:'/intro/pigfarm.jpeg'}
   // ];
   let imageSources = [
     {
@@ -18,32 +18,32 @@ export default function Intro() {
       name_eng: "Poultry Farm",
       description_ko: "최신 기술로 운영되는 현대식 닭 농장입니다.",
       description_eng: "A modern poultry farm operated with the latest technology.",
-      url: "/frontend/intro/poultryfarm",
-      img: "/frontend/intro/poultryfarm.jpeg"
+      url: "/intro/poultryfarm",
+      img: "/intro/poultryfarm.jpeg"
     },
     {
       name_ko: "소 축사",
       name_eng: "Cattle Shed",
       description_ko: "넓고 청결한 소 축사입니다.",
       description_eng: "A spacious and clean cattle shed.",
-      url: "/frontend/intro/cattleshed",
-      img: "/frontend/intro/cattleshed.jpeg"
+      url: "/intro/cattleshed",
+      img: "/intro/cattleshed.jpeg"
     },
     {
       name_ko: "목장 소",
       name_eng: "Cattle in Pasture",
       description_ko: "목장에서 풀을 뜯고 있는 소들입니다.",
       description_eng: "Cattle grazing in the pasture.",
-      url: "/frontend/intro/cattle2",
-      img: "/frontend/intro/cattle2.jpeg"
+      url: "/intro/cattle2",
+      img: "/intro/cattle2.jpeg"
     },
     {
       name_ko: "돼지 농장",
       name_eng: "Pig Farm",
       description_ko: "위생적으로 관리되는 돼지 농장입니다.",
       description_eng: "A hygienically managed pig farm.",
-      url: "/frontend/intro/pigfarm",
-      img: "/frontend/intro/pigfarm.jpeg"
+      url: "/intro/pigfarm",
+      img: "/intro/pigfarm.jpeg"
     }
   ]
   
@@ -51,10 +51,10 @@ export default function Intro() {
     <Fragment>
       <div className={styles.container}>
         <div className={styles.intro}>
-              <video autoPlay muted loop className={styles.videoBackground}>
+              {/* <video autoPlay muted loop className={styles.videoBackground}>
                 <source src="/coverr-rays-of-the-sun-shining-through-a-leaf-3991-1080p.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             <div className={styles.title}>
               우리는 고객의 목표에 맞추어<br/> 최적의 솔루션을 제공합니다.
             </div>
