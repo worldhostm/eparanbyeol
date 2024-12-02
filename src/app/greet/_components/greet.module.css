@@ -3,8 +3,8 @@
   flex-direction: column;
   /* width: 1200px; */
   width:100%;
-  height: 100vh;
   height: auto;
+  height: 100vh;
   background-image: url('/samplebg.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -35,15 +35,14 @@
   align-items: center;
 }
 .flex2 > .textContainer > p{
-  font-weight: 700;
   font-family: 'Pretendard';
-  font-size: 1.5rem;
+  font-size: calc(12px + 1vw);
 }
 .contentHeader{
   width: 100vw;
   height: 300px;
-  background: #000;
-  color:white;
+  background: rgba(0, 0, 0 ,0.1);
+  /* color:white; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,4 +73,12 @@
 }
 .bottomText{
   width: auto;
+}
+
+.greetText{
+  font-family: 'Pretendard-Bold' !important;
+}
+
+.textContainer:nth-child(4){
+  font-size: 12px !important;
 }

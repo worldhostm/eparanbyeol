@@ -14,7 +14,7 @@ import styles from './swipercomp.module.css';
 import Image from 'next/image';
 
 interface Props {
-  imgs : string[]
+  imgs : {img:string, hoverText:{title:string,contents:string}}[];
   auto ?: boolean
   useHover ?:boolean 
 }
@@ -30,36 +30,48 @@ interface FarmInfo {
 
 export default function SwiperComp({imgs,auto, useHover}:Props){
   const [isHover, setisHover] = useState< boolean | null >(null);
+  const [isHoverIdx, setisHoverIdx] = useState<number | null>(null);
+
   return (
     <Swiper
       className={styles['swiper-container']}
       modules={[
         Navigation
-        // , Autoplay
+        , Autoplay
       ]}
       spaceBetween={1}
       slidesPerView={3}
       // navigation
       // pagination={{ clickable: true }}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction:false // 스와이프 후에도 자동재생 유지
-      // }}
-      // loop={true}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction:false // 스와이프 후에도 자동재생 유지
+      }}
+      loop={true}
     >
       {imgs&&
         imgs.map((e,index)=>
           <SwiperSlide 
           key={'slide$$' + index}
-          onMouseEnter={()=>setisHover(true)}
-          // onMouseLeave={()=>setisHover(false)}
+          onMouseEnter={()=>{
+            setisHover(true);
+            setisHoverIdx(index);
+          }}
+          onMouseLeave={()=>{
+            setisHover(false);
+            setisHoverIdx(null);
+          }}
           >
-            <Image src={e} width={300} height={350} objectFit='true' alt=''/>
+            <Image src={e.img} width={300} height={350} objectFit='true' alt=''/>
             {
-              useHover && isHover ? 
+              useHover && isHover && isHoverIdx === index? 
               <div className={styles.overimage}>
-                12312312123
-                123123121231231231212312312312123
+                <div>
+                  {e.hoverText.title}
+                </div>
+                <div>
+                  {e.hoverText.contents}
+                </div>
               </div>
               :<></>
             }

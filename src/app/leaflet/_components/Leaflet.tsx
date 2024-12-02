@@ -4,16 +4,15 @@ import SwiperComp from '@/app/_components/SwiperComp';
 
 export default function Leaflet() {
   let arr=[
-     '/busi/image79.png'
-    ,'/busi/image80.jpeg'
-    ,'/busi/image81.jpeg'
-    ,'/busi/image83.jpeg'
+     {img:'/busi/image79.png' , hoverText:{title:'1번 호버', contents:'1번 설명글'}}
+    ,{img:'/busi/image80.jpeg', hoverText:{title:'2번 호버', contents:'2번 설명글'}}
+    ,{img:'/busi/image81.jpeg', hoverText:{title:'3번 호버', contents:'3번 설명글'}}
+    ,{img:'/busi/image83.jpeg', hoverText:{title:'4번 호버', contents:'4번 설명글'}}
   ];
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.flex1}>
-            1
             <div className={styles.innerflex1}>
               <div className={styles.pageText}>
                 <div className={styles.headtext1}>
@@ -46,8 +45,15 @@ export default function Leaflet() {
             </div>
         </div>
         <div className={styles.flex2}>
-            2
-            <div className={styles.inner2flex1}>inner2flex1</div>
+            <div className={styles.inner2flex1}>
+              <div className={styles.inner2flex1_title}>
+                사업분야
+              </div>
+              <div className={styles.inner2flex1_contents}>
+              설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.
+              설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.설명글입니다.
+              </div>
+            </div>
             <div className={styles.inner2flex2}>
             <SwiperComp 
             imgs={arr} 

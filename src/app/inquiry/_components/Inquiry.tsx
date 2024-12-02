@@ -4,6 +4,12 @@ import React, { useEffect, useState } from 'react'
 import styles from './inquiry.module.css';
 import Image from 'next/image';
 
+type FormData = {
+  name: string;
+  age: number | "";
+  email: string;
+};
+
 export default function Inquiry() {
     // const testFetch =async()=>{
     //   const res = await fetch('http://localhost:9090/api/inquiry', {

@@ -1,9 +1,12 @@
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     width: 100vw;
+    position: fixed;
+    bottom: 0;
 }
 .container .content{
     flex:1;
@@ -14,7 +17,7 @@
     font-family: 'Pretendard';
     font-weight: 700;
     height: 150px;
-    background-color: rgb(105, 101, 101);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
 }
 .container .content .menu{

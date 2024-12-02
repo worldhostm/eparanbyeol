@@ -9,7 +9,8 @@
 }
 .flex1{
   flex: 0.5;
-  background-color: red;
+  background-color: white;
+  border: 1px solid #eaeaea;
   display: flex;
   flex-direction: column;
 }
@@ -19,28 +20,38 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  border: 1px solid #eaeaea;
 }
 .innerflex2{
   flex: 1;
-  background-color: skyblue;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.inner2flex1_title{
+  font-family: 'Pretendard-Bold';
+}
+.flex2 > *{
+  font-family: 'Pretendard';
+}
 .flex2{
   flex: 1.5;
-  background-color: blue;
+  background-color: white;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  border: 1px solid #eaeaea;
 }
 
 .inner2flex1{
   flex:1;
-  background-color: green;
+  background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  border-bottom: 1px solid #eaeaea;
 }
 .inner2flex2{
   flex:1;
@@ -48,6 +59,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.inner2flex1_contents{
+  padding : 50px 100px;
+  word-break: break-all;
 }
 .headtext1{
   font-size: 24px;

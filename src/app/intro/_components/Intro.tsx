@@ -51,10 +51,10 @@ export default function Intro() {
     <Fragment>
       <div className={styles.container}>
         <div className={styles.intro}>
-              {/* <video autoPlay muted loop className={styles.videoBackground}>
+              <video autoPlay muted loop className={styles.videoBackground}>
                 <source src="/coverr-rays-of-the-sun-shining-through-a-leaf-3991-1080p.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video> */}
+              </video>
             <div className={styles.title}>
               우리는 고객의 목표에 맞추어<br/> 최적의 솔루션을 제공합니다.
             </div>
@@ -79,7 +79,7 @@ export default function Intro() {
               </div>
             </div>
           </div> */}
-          <div className={styles.content2}>
+          {/* <div className={styles.content2}>
             <div className={styles.content2Title}>
               <div>
                 Solutions & Services
@@ -90,11 +90,11 @@ export default function Intro() {
               </div>
             </div>
             <SwiperComp imgs={imageSources.map(e=>e.img)}/>
-          </div>
+          </div> */}
         </div>
-          <Certificates />
+          {/* <Certificates />
           <Solution />
-          <ZeroToNumber />
+          <ZeroToNumber /> */}
       </div>
     </Fragment>
   );

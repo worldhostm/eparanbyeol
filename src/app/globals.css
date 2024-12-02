@@ -117,3 +117,86 @@ a {
 .swiper-slide > img{
   border-radius: 8px;
 }
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/static/Pretendard-Regular.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url('/static/Pretendard-SemiBold.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url('/static/Pretendard-ExtraBold.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+
+@font-face {
+  font-family: 'Pretendard-Black';
+  src: url('/static/Pretendard-Black.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('/static/Pretendard-Bold.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url('/static/Pretendard-Light.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+@font-face {
+  font-family: 'Pretendard-Thin';
+  src: url('/static/Pretendard-Thin.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url('/static/Pretendard-Medium.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
+@font-face {
+  font-family: 'Pretendard-ExtraLight';
+  src: url('/static/Pretendard-ExtraLight.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Cross-Origin 사용을 위한 설정 */
+  cross-origin: anonymous;
+}
