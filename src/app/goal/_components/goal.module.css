@@ -28,5 +28,7 @@
   align-items: center;
 }
 .upperContainer{
-
+  margin-top: 80px;
+  font-family: 'Pretendard-Bold';
+  font-size: 48px;
 }

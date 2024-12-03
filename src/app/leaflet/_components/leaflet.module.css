@@ -1,6 +1,7 @@
 .container{
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 50vh;
 }
 .content{
   display: flex;
@@ -13,6 +14,8 @@
   border: 1px solid #eaeaea;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .innerflex1{
   flex: 1;
@@ -22,14 +25,17 @@
   background-color: white;
   border: 1px solid #eaeaea;
 }
+.innerflex2 > *{
+  font-family: 'Pretendard';
+}
 .innerflex2{
-  flex: 1;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .inner2flex1_title{
+  font-size: 48px;
   font-family: 'Pretendard-Bold';
 }
 .flex2 > *{
@@ -40,12 +46,12 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   border: 1px solid #eaeaea;
 }
 
 .inner2flex1{
-  flex:1;
+  margin-top: 80px;
+  flex:-1;
   background-color: white;
   display: flex;
   align-items: center;
@@ -72,6 +78,11 @@
 
 }
 .buzfield > li{
+  font-family: 'Pretendard';
+  margin-top: 8px;
   list-style: none;
-  font-weight: 600;
+}
+.buzfield > span{
+  font-size: 36px;
+  font-family: 'Pretendard-Bold';
 }

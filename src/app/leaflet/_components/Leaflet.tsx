@@ -13,20 +13,11 @@ export default function Leaflet() {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.flex1}>
-            <div className={styles.innerflex1}>
-              <div className={styles.pageText}>
-                <div className={styles.headtext1}>
-                  파란별 TEC컴퍼니
-                </div>
-                <div className={styles.headtext2}>
-                우리는 고객의 목표에 맞추어 <br/>
-                최적의 솔루션을 제공합니다.
-                </div>
-              </div>
-            </div>
             <div className={styles.innerflex2}>
               <ul className={styles.buzfield}>
-              <h2>사업분야</h2><br/>
+              <span>사업분야</span>
+              <br/>
+              <br/>
                 <li>낙농축산분야 </li>
                 <li>
                   도심교통 승객시설

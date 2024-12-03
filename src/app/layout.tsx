@@ -20,11 +20,7 @@ export default function RootLayout({
     <html lang="ko">
         <body
         style={{
-          width:'100%',
-          display:'flex',
-          justifyContent:'center',
-          alignContent:'center',
-          flexDirection:'column',
+          position:'relative'
         }}
         >
         <Header />

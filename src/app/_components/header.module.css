@@ -11,9 +11,9 @@
     font-weight: 700;
     padding:0px 96px;
     border-bottom: 1px solid #eaeaea;
-    position: fixed;
-    top: 0;
-    z-index: 999;
+    /* position: fixed;
+    top: 0; 
+    z-index: 999; */
 }
 .contentContainer{
     width: 100%;

@@ -6,7 +6,6 @@ export default function Greet() {
   return (
     <div className={sty.container}>
       <div className={sty.contentHeader}>
-
       </div>
       <div className={sty.contentContainer}>
         <div className={sty.flex2}>
