@@ -100,6 +100,7 @@ export default function Inquiry() {
               name="title"
               value={formData.title}
               onChange={handleChange}
+              autoComplete='off'
               required
             />
           </div>
@@ -111,6 +112,7 @@ export default function Inquiry() {
               name="companyName"
               value={formData.companyName}
               onChange={handleChange}
+              autoComplete='off'
               required
             />
           </div>
@@ -122,6 +124,7 @@ export default function Inquiry() {
               name="location"
               value={formData.location}
               onChange={handleChange}
+              autoComplete='off'
               required
             />
           </div>
@@ -133,6 +136,7 @@ export default function Inquiry() {
               id="contact"
               name="contact"
               value={formData.contact}
+              autoComplete='off'
               onChange={handleChange}
               required
             />
@@ -145,6 +149,7 @@ export default function Inquiry() {
               name="message"
               value={formData.message}
               onChange={handleChange}
+              autoComplete='off'
               required
             />
           </div>
