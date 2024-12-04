@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react'
 import styles from './leaflet.module.css';
 import SwiperComp from '@/app/_components/SwiperComp';
+import DynamicChart from '@/app/_components/DynamicChart';
 
 export default function Leaflet() {
   let arr=[
@@ -9,8 +12,60 @@ export default function Leaflet() {
     ,{img:'/busi/image81.jpeg', hoverText:{title:'3번 호버', contents:'3번 설명글'}}
     ,{img:'/busi/image83.jpeg', hoverText:{title:'4번 호버', contents:'4번 설명글'}}
   ];
+  const trafficData = {
+    labels: ['0hr', '3hr', '24hr', '48hr'],
+    datasets: [
+      {
+        label: 'Traffic Sources',
+        data: [0, 15.3, 69.2, 99.9], // 트래픽 소스의 비율
+        // backgroundColor: [
+        //   'rgba(75, 192, 192, 0.2)',
+        //   'rgba(255, 99, 132, 0.2)',
+        //   'rgba(255, 205, 86, 0.2)',
+        //   'rgba(54, 162, 235, 0.2)',
+        // ],
+        borderColor: [
+          'rgba(1, 0, 255, 1)',
+        ],
+        borderWidth: 3,
+        options : {
+          scales: {
+            x: {
+              type: 'category', // 카테고리 스케일
+            },
+            y: {
+              type: 'linear', // linear 스케일
+              beginAtZero: true,
+            },
+          },
+        },
+      },
+    ]
+  };
+
+  const options = {
+    scales: {
+      x: {
+        type: 'category', // 카테고리 스케일
+      },
+      y: {
+        type: 'linear', // linear 스케일
+        beginAtZero: true,
+      },
+    },
+    layout:{
+      backgroundColor:'rgba(255 ,255 ,255 ,0)'
+    }
+  }
+  
+
   return (
     <div className={styles.container}>
+       <DynamicChart 
+        chartType='line'
+        data={trafficData}
+        options={options}
+      />
       <div className={styles.content}>
         <div className={styles.flex1}>
             <div className={styles.innerflex2}>
