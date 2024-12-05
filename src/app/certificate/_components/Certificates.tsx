@@ -11,13 +11,17 @@ export default function Certificates() {
     , {name:'대장균 시험 성적서 (KCL)',img:"certificate4.jpeg"}
     , {name:'대장균 시험 성적서 (KCL)',img:"certificate5.jpeg"}
     , {name:'탈취 시험 성적서 (KCL)',img:"certificate6.jpeg"}
+    , {name:'LED의 동물 각막 영향 실험(동국대)-1',img:"experiment1.png"}
+    , {name:'LED의 동물 각막 영향 (동국대)-2',img:"experiment2.png"}
+    , {name:'LED의 동물 각막 영향 (동국대)-3',img:"experiment3.png"}
   ];
 
   return (
     <div className={sty.container}>
       <div className={sty.content}>
         <div className={sty.titleContainer}>
-          <span className={sty.title}>인증서</span>
+          <div className={sty.title}>개발품 성능 인증</div>
+          <div className={sty.subtitle}>특허및 성능, 안전성 평가 공인인증 2</div>
         </div>
         <div className={sty.contentContainer}>
             {

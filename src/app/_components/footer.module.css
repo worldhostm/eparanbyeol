@@ -1,11 +1,12 @@
 
 .container{
+    /* position: fixed; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    /* width: 1200px; */
     width: 100vw;
-    position: fixed;
     bottom: 0;
     z-index: 99;
 }

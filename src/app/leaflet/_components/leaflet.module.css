@@ -1,11 +1,11 @@
 .container{
-  width: 100vw;
+  width: 1200px;
   height: auto;
   min-height: 50vh;
 }
 .content{
   display: flex;
-  width: 100vw;
+  width: 1200px;
   height: 100vh;
 }
 .flex1{

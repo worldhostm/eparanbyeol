@@ -1,5 +1,5 @@
 .container{
-  width: 100vw;
+  width: 1200px;
   height: auto;
   background-color: #fff;
   display: flex;
@@ -19,9 +19,13 @@
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: baseline;
+  padding:40px;
+  margin-top: 80px;
 }
 .contentContainer{
+  margin-top: 40px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,11 +38,19 @@
   justify-content: center;
   width: 440px;
   height: 640px;
-  background-color: #FAFAFA;
+  border: 1px solid #eaeaea;
+  background-color: white;
 }
 .title{
+  width: 100%;
   font-size: 32px;
-  font-weight: 700;
+  font-family: 'Pretendard-Bold';
+}
+.subtitle{
+  margin-top: 8px;
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Pretendard';
 }
 
 @media (min-width:768px) and (max-width:1200px){

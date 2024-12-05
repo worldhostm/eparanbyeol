@@ -200,3 +200,6 @@ a {
   /* Cross-Origin 사용을 위한 설정 */
   cross-origin: anonymous;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

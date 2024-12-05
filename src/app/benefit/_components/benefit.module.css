@@ -1,194 +1,83 @@
-.container{
+
+/* body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+} */
+
+.container {
   display: flex;
-  width: 100vw;
+  width: 1200px;
   height: auto;
   min-height: 100vh;
-}
-
-.flex1
-,.flex2
-,.flex3{
-  flex: 1;
-}
-
-.flex1{
-  display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  width: 33vw;
-  min-height: 100vh;
-  height: auto;
-}
-.flex2{
-  position: relative;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.flex3{
-  border: 1px solid black;
-}
-.circle {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: rgb(3, 75, 183); /* 배경색 추가 */
-}
-
-.circle img {
-  border-radius: 50%;
-}
-
-
-.flex1innerContainer1, .flex1innerContainer2{
-  flex: 1;
-}
-.flex3innerContainer1{
-  background-color: beige;
-  height: auto;
-  min-height: 50vh;
+  position:relative;
+  margin: 0 auto;
+  background: white;
+  /* padding: 20px; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
-.flex3innerContainer2{
-  min-height: 50vh;
-  background-color: aquamarine;
-}
-.flex1innerContainer1{
-  background-color: red;
-  height: auto;
-  min-height: 50vh;
-}
-.flex1innerContainer2{
-  min-height: 50vh;
-  background-color: aqua;
+
+.header {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
 }
 
-.top-arrow-with-neck{
+.center-circle {
   position: absolute;
-  width: 0;
-  height: 0;
-  top: -100px;
-  left: 120px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 40px solid black; /* 화살촉 색상 */
-}
-
-.top-arrow-with-neck::after{
-  content: "";
-  position: absolute;
-  top: 40px; /* 화살촉의 높이에 맞춰 위치 조정 */
-  left: -10px; /* 화살대의 너비를 고려하여 위치 조정 */
-  width: 20px; /* 화살대의 너비 */
-  height: 160px; /* 화살대의 길이 */
-  background-color: black; /* 화살대의 색상 */
-}
-
-.left-arrow-with-neck {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 120px;
-  left: 200px;  /* 위치 조정 */
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-right: 40px solid black; /* 화살촉 색상 */
-}
-
-.left-arrow-with-neck::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: 40px; /* 화살촉의 너비에 맞춰 위치 조정 */
-  width: 160px;
-  height: 20px;
-  background-color: black;
-}
-
-.right-arrow-with-neck {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 120px;
-  left: 380px;  /* 위치 조정 */
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-left: 40px solid black; /* 화살촉 색상 */
-}
-
-.right-arrow-with-neck::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -200px; /* 화살촉의 너비에 맞춰 위치 조정 */
-  width: 160px;
-  height: 20px;
-  background-color: black;
-}
-
-.bottom-arrow-with-neck {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 360px;  /* 위치 조정 */
-  left: 120px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 40px solid black; /* 화살촉 색상 변경 */
-}
-
-.bottom-arrow-with-neck::after {
-  content: "";
-  position: absolute;
-  bottom: 40px; /* 변경된 화살촉 위치에 맞춰 조정 */
-  left: -10px;
-  width: 20px;
-  height: 160px;
-  background-color: black;
-}
-.left-arrow-with-neck {
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 120px;
-  left: -110px;  /* 위치 조정 */
-  right: 30px;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
-  border-right: 40px solid black; /* 화살촉 색상 */
-}
-
-.left-arrow-with-neck::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 39px;
-  right: 80px; /* 화살촉의 너비에 맞춰 위치 조정 */
-  width: 160px;
-  height: 20px;
-  background-color: black;
-}
-.titleText{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 30px;
-  align-items: center;
-}
-.imgDiv{
-  background-color: black;
-}
-.centerImgDiv{
-  width: 100px;
-  height: 100px;
+  left: 39.5%;
+  top: 11%;
+  background: linear-gradient(to bottom, #005baa, #0082B4);
+  color: white;
+  width:  250px;
+  height: 250px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 350px;
+  margin-bottom: 20px;
+}
+
+.box {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: #eaeaea;
+  border: 1px solid #005baa;
+  padding: 15px;
+}
+
+.box h3 {
+  background-color: #005baa;
+  color: white;
+  padding: 10px;
+  margin: -15px -15px 10px -15px;
+}
+
+.box ul {
+  text-align: left;
+  padding-left: 20px;
+}
+.box ul li{
+  margin-top: 8px;
 }

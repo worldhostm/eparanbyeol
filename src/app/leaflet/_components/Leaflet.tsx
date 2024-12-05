@@ -61,11 +61,11 @@ export default function Leaflet() {
 
   return (
     <div className={styles.container}>
-       <DynamicChart 
+       {/* <DynamicChart 
         chartType='line'
         data={trafficData}
         options={options}
-      />
+      /> */}
       <div className={styles.content}>
         <div className={styles.flex1}>
             <div className={styles.innerflex2}>

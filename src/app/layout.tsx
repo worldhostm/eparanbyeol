@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import SubHeader from "./_components/SubHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,17 @@ export default function RootLayout({
     <html lang="ko">
         <body
         style={{
-          position:'relative'
+          position:'relative',
+          background:'white',
+          display:'flex',
+          alignItems:'center',
+          justifyContent:'center',
+          flexDirection:'column',
         }}
         >
         <Header />
+        {/* 서비메뉴 헤더 */}
+        <SubHeader />
         {children}
         <Footer />
         </body>
