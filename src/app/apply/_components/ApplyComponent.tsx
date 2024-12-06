@@ -1,7 +1,8 @@
 'use client'
 
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import styles from './apply.module.css';
 
 export default function ApplyComponent() {
     const images = [
@@ -15,6 +16,7 @@ export default function ApplyComponent() {
 
   return (
     <div
+    className={styles.container}
         style={{
             position: 'relative',
             width: '1200px',
@@ -26,7 +28,7 @@ export default function ApplyComponent() {
             alignItems: 'center',
             // background:'white'
             }}>
-            <div style={{
+            {/* <div style={{
                 width:'1200px',
                 height:'80px',
                 background:'black',
@@ -37,8 +39,10 @@ export default function ApplyComponent() {
                 alignItems:'center',
                 justifyContent:'baseline',
                 padding:'0px 40px',
-            }}>적용분야 
-            </div>
+            }}>
+                적용분야 
+            </div> 
+            */}
             <div
                 style={{
                     position: 'relative',
@@ -46,10 +50,12 @@ export default function ApplyComponent() {
                     height: '100vh',
                     borderRadius: '50%',
                 }}
+                className={styles.underContainer}
             >
         {images && images.map((_, index) => (
             <div
-            key={_.src.substring(6,10) + index} 
+            key={_.src.substring(6,10) + index}
+            className={styles.imageContainer}
             style={{
                 display:'flex',
                 flexDirection:'column',
@@ -59,6 +65,7 @@ export default function ApplyComponent() {
                 borderRadius: '50%',
                 top: `${450 - 25 + 400 * Math.sin((index * 360) / 6 / 180 * Math.PI)}px`,
                 left:`${470 - 25 + 400 * Math.cos((index * 360) / 6 / 180 * Math.PI)}px`,
+                animationDelay:`${index/3}s`
             }}>
                 <Image
                 src={_.src} // 이미지 URL

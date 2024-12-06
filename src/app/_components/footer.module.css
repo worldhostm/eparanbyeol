@@ -9,6 +9,7 @@
     width: 100vw;
     bottom: 0;
     z-index: 99;
+    background: linear-gradient(to right, #090F20, #044BFF);
 }
 .container .content{
     flex:1;
@@ -18,7 +19,6 @@
     flex-direction: column;
     font-family: 'Pretendard';
     height: 150px;
-    background-color: rgba(0, 0, 0, 1);
     color: white;
 }
 .container .content .menu{

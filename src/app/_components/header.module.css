@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    background: black;
+    background: linear-gradient(to right, #090F20, #044BFF);
     color: white;
     white-space: nowrap;
     font-family: 'Pretendard';
