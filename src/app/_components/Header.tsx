@@ -32,6 +32,10 @@ export const menuArr = [
   {
     "url": "/apply",
     "menuName": "적용 분야"
+  },
+  {
+    "url": "/verify",
+    "menuName": "성능 입증"
   }
 ]
 export default function Header() {

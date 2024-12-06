@@ -11,9 +11,10 @@ interface ChartProps {
   data: any;
   options: any;
   className?:string;
+  title?:string;
 }
 
-const DynamicChart: React.FC<ChartProps> = ({ chartType, data, options, className }) => {
+const DynamicChart: React.FC<ChartProps> = ({ chartType, data, options, className, title }) => {
   
   // 차트 타입에 따라 다른 차트를 렌더링
   const renderChart = () => {
@@ -35,8 +36,19 @@ const DynamicChart: React.FC<ChartProps> = ({ chartType, data, options, classNam
 
   return <div className={className} 
               style={{
-              background:'white'
-            }}>{renderChart()}</div>;
+              background:'white',
+              position:'relative',
+              fontFamily:'Pretendard-Bold',
+              color:'red'
+            }}>
+            <div 
+            style={{
+              position:'absolute',
+              top:'-10%',
+              left:'50%',
+            }}>{title}</div>
+              {renderChart()}
+            </div>;
 };
 
 export default DynamicChart;

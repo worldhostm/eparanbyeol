@@ -65,7 +65,7 @@ export default function ApplyComponent() {
                 borderRadius: '50%',
                 top: `${450 - 25 + 400 * Math.sin((index * 360) / 6 / 180 * Math.PI)}px`,
                 left:`${470 - 25 + 400 * Math.cos((index * 360) / 6 / 180 * Math.PI)}px`,
-                animationDelay:`${index/3}s`
+                // animationDelay:`${index/3}s`
             }}>
                 <Image
                 src={_.src} // 이미지 URL

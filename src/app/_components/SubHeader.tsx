@@ -33,7 +33,7 @@ export default function SubHeader() {
         justifyContent:'center',
         color:'white',
         fontSize:'48px',
-        background:'black'
+        background:'black',
       }}>
       <div
       style={{
@@ -50,7 +50,8 @@ export default function SubHeader() {
           width:'100%',
           display:'flex',
           justifyContent:'baseline',
-          alignItems:'center'
+          alignItems:'center',
+          animation:'rising 1s forwards'
         }}
         >
         {
