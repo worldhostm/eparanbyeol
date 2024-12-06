@@ -13,8 +13,11 @@ export default function Goal() {
       <div className={styles.upperContainer}>기업의 지향목표</div>
       <div className={styles.contentContainer}>
       {
-        arr && arr.map(e=>
-        <div className={styles.contents}>
+        arr && arr.map((e,idx)=>
+        <div 
+        key={'titleText' + idx}
+        className={styles.contents}
+        >
           <div>
             <Image src={e.imgSrc} width={227} height={227} alt=""/>
           </div>

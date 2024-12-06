@@ -18,7 +18,7 @@ export default function SubHeader() {
 
   return (
     // 소개랑 루트 일때 안보여줌
-    (pathName !== ('/intro' || '/') )&&
+    (pathName !== '/intro'  && pathName !== '/' )&&
     <div style={{
         position:'relative',
         width:'1200px',
