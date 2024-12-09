@@ -65,6 +65,7 @@ export default function Goal() {
       <div style={{
         width:'1200px',
         height:'900px',
+        position:'relative'
       }}>
         <div className={styles.graphUpper}>
           <div className={styles.topper}>개발품 성능 입증 : LUKA 405(시험인증)</div>

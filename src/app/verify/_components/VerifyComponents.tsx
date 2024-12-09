@@ -15,15 +15,15 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(250, 0, 0, 1)',
         ],
-        pointRadius: 0,
+        // pointRadius: 0,
       },
       {
         label: 'Traffic Sources',
         data: [2.3, 2.2,2.0,1.9,1.8,1.8], // 트래픽 소스의 비율
         borderColor: [
-          'rgba(0, 0, 0, 1)',
+          'rgba(54, 138, 255, 1)',
         ],
-        pointRadius: 0,
+        // pointRadius: 0,
       },
     ]
   };
@@ -64,7 +64,7 @@ export default function VerifyComponents() {
             gap:'3px'
           }}>
             정제수
-            <div style={{width:'100%', border:'3px solid black'}}/>
+            <div style={{width:'100%', border:'3px solid #368AFF'}}/>
           </div>
           <div style={{
             display:'flex',
@@ -120,8 +120,8 @@ export default function VerifyComponents() {
       </div>
       <div className={styles.contentContainer}>
           <div style={{
-            width:'290px',
-            height:'290px'
+            width:'270px',
+            height:'270px'
           }}>
             <DynamicChart
               chartType='line'
@@ -131,8 +131,8 @@ export default function VerifyComponents() {
             />
           </div>
           <div style={{
-            width:'290px',
-            height:'290px'
+            width:'270px',
+            height:'270px'
           }}>
             <DynamicChart
               chartType='line'
@@ -142,8 +142,8 @@ export default function VerifyComponents() {
             />
           </div>
           <div style={{
-            width:'290px',
-            height:'290px'
+            width:'270px',
+            height:'270px'
           }}>
             <DynamicChart
               chartType='line'
@@ -153,8 +153,8 @@ export default function VerifyComponents() {
             />
           </div>
           <div style={{
-            width:'290px',
-            height:'290px'
+            width:'270px',
+            height:'270px'
           }}>
             <DynamicChart
               chartType='line'
@@ -172,7 +172,7 @@ export default function VerifyComponents() {
       </div>
       <div className={styles.contentContainer}>
           <div style={{
-            width:'600px',
+            width:'550px',
             height:'300px'
           }}>
             <DynamicChart
@@ -183,8 +183,8 @@ export default function VerifyComponents() {
             />
           </div>
           <div style={{
-            width:'600px',
-            height:'300px'
+            width:'550px',
+            height:'auto'
           }}>
             <DynamicChart
               chartType='line'

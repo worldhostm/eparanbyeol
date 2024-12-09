@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './apply.module.css';
+import InstallExComponent from '@/app/_components/InstallExComponent';
 
 export default function ApplyComponent() {
     const images = [

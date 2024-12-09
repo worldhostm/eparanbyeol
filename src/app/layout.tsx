@@ -36,8 +36,8 @@ export default function RootLayout({
               {/* 서비메뉴 헤더 */}
               <SubHeader />
               {children}
-              <Footer />
           </ConstantProvider>
+        <Footer />
         </body>
     </html>
   );

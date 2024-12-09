@@ -19,6 +19,7 @@
     max-width: 1200px;
 }
 .contentContainer{
+    width: 1200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,4 +33,8 @@
     display: flex;
     gap: 8px;
     align-items: center;
+}
+
+.contentContainer:nth-child(6){
+    gap: 100px;
 }

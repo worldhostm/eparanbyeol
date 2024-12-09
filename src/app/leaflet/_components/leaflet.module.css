@@ -2,11 +2,14 @@
   width: 1200px;
   height: auto;
   min-height: 50vh;
+  margin-bottom: 40px;
 }
 .content{
   display: flex;
   width: 1200px;
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
+  min-height: 40vh;
 }
 .flex1{
   flex: 0.5;
@@ -42,11 +45,14 @@
   font-family: 'Pretendard';
 }
 .flex2{
-  flex: 1.5;
+  width: 100%;
+  /* flex: 1.5; */
   background-color: white;
   display: flex;
   flex-direction: column;
   border: 1px solid #eaeaea;
+  align-items: center;
+  justify-content: center;
 }
 
 .inner2flex1{
@@ -60,7 +66,6 @@
   border-bottom: 1px solid #eaeaea;
 }
 .inner2flex2{
-  flex:1;
   background-color: white;
   display: flex;
   align-items: center;

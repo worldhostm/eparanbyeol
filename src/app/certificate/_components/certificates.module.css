@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  padding:20px;
 }
 .content{
   display: flex;
@@ -53,9 +54,9 @@
   font-family: 'Pretendard';
 }
 
-@media (min-width:768px) and (max-width:1200px){
-  .contentNode{
+@media (max-width:768px){
+  .contentNode, .contentNode > img{
     width: 30vw;
-    height: 45vw;
+    height: auto;
   }
 }
