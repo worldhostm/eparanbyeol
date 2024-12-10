@@ -34,10 +34,10 @@ export default function RootLayout({
           <ConstantProvider>
               <Header />
               {/* 서비메뉴 헤더 */}
-              <SubHeader />
-              {children}
+                <SubHeader />
+                {children}
+              <Footer />
           </ConstantProvider>
-        <Footer />
         </body>
     </html>
   );

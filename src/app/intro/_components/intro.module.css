@@ -22,7 +22,8 @@
     position: relative;
     min-height: 400px !important;
     height: 80vh; /* Adjust height as needed */
-    width: 1200px;
+    /* width: 1200px; */
+    width: 100vw;
     overflow: hidden;
     border: 1px solid #e0e0e0;
     display: flex;

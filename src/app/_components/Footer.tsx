@@ -53,7 +53,8 @@ const menus = [
 export default function Footer() {
   return (
     <div className={styles.container}>
-    {menus.map((menu, index) => (
+    {/* {
+    menus.map((menu, index) => (
       <div 
       className={styles.content} 
       key={index}
@@ -85,9 +86,40 @@ export default function Footer() {
         ))}
       </div>
     ))
-    }
-    <div>
-      <div></div>
+    } */}
+    <div style={{
+      display:'flex',
+      flexDirection:'column',
+      gap:'10px',
+      color:'white',
+      padding:'20px',
+      fontFamily:'Pretendard',
+      justifyContent:'center',
+      alignItems:'center'
+    }}>
+      <div style={{
+        fontSize:'22px'
+      }}>(주)파란별</div>
+      <div
+      style={{
+        fontSize:'14px'
+      }}
+      >업체명 : (주)파란별</div>
+      <div
+      style={{
+        fontSize:'14px'
+      }}
+      >대표번호 : 123-456-5678 / FAQ:123-123-1234</div>
+      <div
+      style={{
+        fontSize:'14px'
+      }}
+      >사업자등록번호 : 123-12-12345</div>
+      <div
+      style={{
+        fontSize:'14px'
+      }}
+      >주소 : 경기도 안양시 동안구</div>
     </div>
   </div>
 );
