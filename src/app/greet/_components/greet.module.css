@@ -1,10 +1,11 @@
 .container{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* width: 1200px; */
   width:100%;
   height: auto;
-  min-height: 82vh;
+  min-height: 71vh;
   background-image: url('/samplebg.jpg');
   background-repeat: no-repeat;
   justify-content: baseline;

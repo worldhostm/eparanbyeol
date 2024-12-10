@@ -11,9 +11,9 @@
 .container {
   display: flex;
   width: 1200px;
-  height: auto;
-  min-height: 100vh;
+  height: 60vh;
   flex-direction: column;
+  justify-content: center;
   position:relative;
   margin: 0 auto;
   background: white;

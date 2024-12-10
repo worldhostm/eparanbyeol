@@ -47,23 +47,25 @@ export default function Header() {
   
   return (
     <Fragment>
-        <div className={styles.container}>
-          <div className={styles.logoContainer}>
-            {/* <div className={styles.imgDiv}></div> */}
-            <div className={styles.logoText}>
-              <Link href={'/'}>파란별TEC</Link>
-              {/* <p>paranbyeol</p> */}
+        <div className={styles.containerTop}>
+          <div className={styles.container}>
+            <div className={styles.logoContainer}>
+              {/* <div className={styles.imgDiv}></div> */}
+              <div className={styles.logoText}>
+                <Link href={'/'}>파란별TEC</Link>
+                {/* <p>paranbyeol</p> */}
+              </div>
             </div>
-          </div>
-          <div className={styles.contentContainer}>
-            {
-              menuArr.map((e,idx)=>
-                <Link 
-              href={e.url}
-              key={e.menuName + 'kkkk' + idx}
-              >{e.menuName}</Link>
-              )
-            }
+            <div className={styles.contentContainer}>
+              {
+                menuArr.map((e,idx)=>
+                  <Link 
+                href={e.url}
+                key={e.menuName + 'kkkk' + idx}
+                >{e.menuName}</Link>
+                )
+              }
+            </div>
           </div>
         </div>
     </Fragment>

@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="ko">
         <body
         style={{
+          width:'auto',
           position:'relative',
           background:'white',
           display:'flex',

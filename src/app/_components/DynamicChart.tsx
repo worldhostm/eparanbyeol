@@ -8,8 +8,8 @@ Chart.register(CategoryScale, LinearScale, BarElement, LineElement, ArcElement, 
 // 차트 타입, 데이터, 옵션을 파라미터로 받아서 동적으로 차트를 렌더링하는 컴포넌트
 interface ChartProps {
   chartType: string;
-  data: any;
-  options: any;
+  data: any;                                                                                                                                  
+  options?: any;
   className?:string;
   title?:string;
 }
@@ -20,17 +20,17 @@ const DynamicChart: React.FC<ChartProps> = ({ chartType, data, options, classNam
   const renderChart = () => {
     switch (chartType) {
       case 'bar':
-        return <Bar data={data} options={options} />;
+        return <Bar data={data} options={data.options} />;
       case 'line':
-        return <Line data={data} options={options} />;
+        return <Line data={data} options={data.options} />;
       case 'doughnut':
-        return <Doughnut data={data} options={options} />;
+        return <Doughnut data={data} options={data.options} />;
       case 'bubble':
-        return <Bubble data={data} options={options} />;
+        return <Bubble data={data} options={data.options} />;
       case 'radar':  // Radar 차트 추가
-        return <Radar data={data} options={options} />;
+        return <Radar data={data} options={data.options} />;
       default:
-        return <Bar data={data} options={options}  />; // 기본값은 Bar 차트
+        return <Bar data={data} options={data.options}  />; // 기본값은 Bar 차트
     }
   };
 

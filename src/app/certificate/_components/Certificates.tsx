@@ -11,9 +11,9 @@ export default function Certificates() {
     , {name:'대장균 시험 성적서 (KCL)',img:"certificate4.jpeg"}
     , {name:'대장균 시험 성적서 (KCL)',img:"certificate5.jpeg"}
     , {name:'탈취 시험 성적서 (KCL)',img:"certificate6.jpeg"}
-    , {name:'LED의 동물 각막 영향 실험(동국대)-1',img:"experiment1.png"}
-    , {name:'LED의 동물 각막 영향 (동국대)-2',img:"experiment2.png"}
-    , {name:'LED의 동물 각막 영향 (동국대)-3',img:"experiment3.png"}
+    // , {name:'LED의 동물 각막 영향 실험(동국대)-1',img:"experiment1.png"}
+    // , {name:'LED의 동물 각막 영향 (동국대)-2',img:"experiment2.png"}
+    // , {name:'LED의 동물 각막 영향 (동국대)-3',img:"experiment3.png"}
   ];
 
   return (

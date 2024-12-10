@@ -1,16 +1,24 @@
+.containerTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80px;
+    background: linear-gradient(to right, #090F20, #044BFF);
+}
+
 .container{
-    width: 100%;
+    width: 1200px;
     height: 80px;
     display: flex;
     align-items: center;
     gap: 50px;
-    background: linear-gradient(to right, #090F20, #044BFF);
+    /* background: linear-gradient(to right, #090F20, #044BFF); */
     color: white;
     white-space: nowrap;
     font-family: 'Pretendard';
     font-weight: 700;
     padding:0px 96px;
-    border-bottom: 1px solid #eaeaea;
     /* position: fixed;
     top: 0; 
     z-index: 999; */

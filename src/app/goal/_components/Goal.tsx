@@ -4,6 +4,7 @@ import React from 'react';
 import styles from './goal.module.css';
 import Image from 'next/image';
 import DynamicChart from '@/app/_components/DynamicChart';
+import { layouts, scales } from 'chart.js';
 export default function Goal() {
   const arr = [
     {imgSrc : '/FirstAid.svg',titleText:'친환경', contentText:'텍스트1'},
@@ -22,23 +23,43 @@ export default function Goal() {
           'rgba(1, 0, 255, 1)',
         ],
       },
-    ]
+    ],
+    options:{
+      scales:{
+        x:{
+          display:false,
+          // type: 'linear', // linear 스케일
+        },
+        y:{
+          // type: 'linear', // linear 스케일
+          display:false
+        },
+        // layout:{
+        //   backgroundColor:'rgba(255,255,255,0)'
+        // }
+      }
+    }
   };
 
-  const options = {
-    scales: {
-      x: {
-        type: 'category', // 카테고리 스케일
-      },
-      y: {
-        type: 'linear', // linear 스케일
-        beginAtZero: true,
-      },
-    },
-    layout:{
-      backgroundColor:'rgba(255 ,255 ,255 ,0)'
-    }
-  }
+  // const options = {
+  //   scales: {
+  //     x: {
+  //       type: 'category', // 카테고리 스케일
+  //     },
+  //     y: {
+  //       type: 'linear', // linear 스케일
+  //       beginAtZero: true,
+  //     },
+  //   },
+  //   layout:{
+  //     backgroundColor:'rgba(255 ,255 ,255 ,0)'
+  //   },
+  //   plugins: {
+  //     customCanvasBackgroundColor: {
+  //       color: 'lightGreen',
+  //     }
+  //   }
+  // }
   return (
     <div className={styles.container}>
       <div className={styles.upperContainer}>기업의 지향목표</div>
@@ -84,7 +105,7 @@ export default function Goal() {
         <DynamicChart 
           chartType='line'
           data={trafficData}
-          options={options}
+          // options={options}
         />
       </div>
 
