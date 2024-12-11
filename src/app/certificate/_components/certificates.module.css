@@ -1,3 +1,6 @@
+.container  *{
+  font-family: 'Pretendard';
+}
 .container{
   width: 1200px;
   height: auto;
@@ -37,6 +40,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   width: 380px;
   height: 640px;
   border: 1px solid #eaeaea;
@@ -54,6 +59,16 @@
   font-family: 'Pretendard';
 }
 
+.contentname{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: liner;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, #090F20, #044BFF);
+  color: white;
+}  
 @media (max-width:768px){
   .contentNode, .contentNode > img{
     width: 30vw;

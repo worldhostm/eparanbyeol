@@ -7,7 +7,7 @@ export default function Benefit() {
   return (
       <div className={sty.container}>
         <div className={sty.header}>
-          {/* 1등급 원유 생산, 농가 소득증대, 생산성 향상, 환경개선, 스마트 축산업 구현 */}
+          1등급 원유 생산, 농가 소득증대, 생산성 향상, 환경개선, 스마트 축산업 구현
         </div>
         <div
         style={{

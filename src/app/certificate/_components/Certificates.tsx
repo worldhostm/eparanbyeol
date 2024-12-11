@@ -30,7 +30,8 @@ export default function Certificates() {
               className={sty.contentNode}
               key={'contentNode'+idx+ '$$'}
               >
-                  <Image src={'/certificate/' + e.img} width={420} height={600} alt="certificates" />
+                  <div className={sty.contentname}>{e.name}</div>
+                  <Image src={'/certificate/' + e.img} width={378} height={600} alt="certificates" />
               </div>
              )
             }

@@ -42,7 +42,7 @@ export default function SubHeader() {
           alignItems:'center',
           justifyContent:'center',
           color:'white',
-          fontSize:'48px',
+          fontSize:'36px',
           background:'black',
         }}>
         <div

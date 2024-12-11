@@ -27,14 +27,14 @@ export default function Goal() {
     options:{
       scales:{
         x:{
-          display:false,
-          // type: 'linear', // linear 스케일
+          // display:false,
+          type: 'category', // linear 스케일
         },
         y:{
-          // type: 'linear', // linear 스케일
-          display:false
+          type: 'linear', // linear 스케일
+          // display:false
         },
-        // layout:{
+        // layouts:{
         //   backgroundColor:'rgba(255,255,255,0)'
         // }
       }
