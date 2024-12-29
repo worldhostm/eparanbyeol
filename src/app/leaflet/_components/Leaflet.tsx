@@ -16,7 +16,8 @@ export default function Leaflet() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        {/* <div className={styles.flex1}>
+        {/* 
+        <div className={styles.flex1}>
             <div className={styles.innerflex2}>
               <ul className={styles.buzfield}>
               <span>사업분야</span>

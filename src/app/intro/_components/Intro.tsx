@@ -27,8 +27,8 @@ export default function Intro() {
       <Goal />
       <Benefit/>
       <Leaflet/>
-      <Certificates />
       <VerifyComponents />
+      <Certificates />
     </Fragment>
   );
 }
