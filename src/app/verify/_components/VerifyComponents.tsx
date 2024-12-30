@@ -15,7 +15,7 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(250, 0, 0, 1)',
         ],
-        // pointRadius: 0,
+        pointRadius: 0,
       },
       {
         label: 'Traffic Sources',
@@ -23,7 +23,74 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(54, 138, 255, 1)',
         ],
-        // pointRadius: 0,
+        pointRadius: 0,
+      },
+    ]
+  };
+  // 황색포도균
+  const data2 = {
+    labels: ['0','2','4','6','8','10'],
+    datasets: [
+      {
+        label: 'Traffic Sources',
+        data: [3.5,0,0,0,0,0], // 트래픽 소스의 비율
+        borderColor: [
+          'rgba(250, 0, 0, 1)',
+        ],
+        pointRadius: 0,
+      },
+      {
+        label: 'Traffic Sources',
+        data: [3.5, 3.4, 3.3, 3.3, 3.3, 3.2], // 트래픽 소스의 비율
+        borderColor: [
+          'rgba(54, 138, 255, 1)',
+        ],
+        pointRadius: 0,
+      },
+    ]
+  };
+
+  // 녹농균
+  const data3 = {
+    labels: ['0','2','4','6','8','10'],
+    datasets: [
+      {
+        label: 'Traffic Sources',
+        data: [3.5,0,0,0,0,0], // 트래픽 소스의 비율
+        borderColor: [
+          'rgba(250, 0, 0, 1)',
+        ],
+        pointRadius: 0,
+      },
+      {
+        label: 'Traffic Sources',
+        data: [3.5, 3.4, 3.3, 3.3, 3.3, 3.2], // 트래픽 소스의 비율
+        borderColor: [
+          'rgba(54, 138, 255, 1)',
+        ],
+        pointRadius: 0,
+      },
+    ]
+  };
+  // 황화수소 
+  const data4 = {
+    labels: ['0','2','4','6','8','10'],
+    datasets: [
+      {
+        label: 'Traffic Sources',
+        data: [3.5,0,0,0,0,0], // 트래픽 소스의 비율
+        borderColor: [
+          'rgba(250, 0, 0, 1)',
+        ],
+        pointRadius: 0,
+      },
+      {
+        label: 'Traffic Sources',
+        data: [3.5, 3.4, 3.3, 3.3, 3.3, 3.2], // 트래픽 소스의 비율
+        borderColor: [
+          'rgba(54, 138, 255, 1)',
+        ],
+        pointRadius: 0,
       },
     ]
   };
@@ -43,6 +110,9 @@ export default function VerifyComponents() {
   }
   return (
     <div className={styles.container}>
+      <div className={styles.pagetitle}>
+          제품개발 및 성능 구현 ( Performance Verification )
+        </div>
       <div className={styles.titleContainer}>
         <div className={styles.titleText}>
           <Image src={'/CopySimple.svg'} width={36} height={36} alt='이미지'/>
@@ -94,7 +164,7 @@ export default function VerifyComponents() {
         }}>
           <DynamicChart
             chartType='line'
-            data={trafficData}
+            data={data2}
             options={options}
             title={'황색포도균'}
           />
@@ -105,7 +175,7 @@ export default function VerifyComponents() {
         }}>
           <DynamicChart
             chartType='line'
-            data={trafficData}
+            data={data3}
             options={options}
             title={'녹농균'}
           />

@@ -50,7 +50,7 @@ export default function Leaflet() {
         </div>
 
       </div>
-      <InstallExComponent />
+      {/* <InstallExComponent /> */}
     </div>
   )
 }
