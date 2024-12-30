@@ -32,8 +32,11 @@ export default function Product({data}:Props) {
         </div>
         <div className={style.midContainer}>
             {
-                data.desArr && data.desArr.map(e=>
-                    <div className={style.gubunbox}>
+                data.desArr && data.desArr.map((e,idx)=>
+                    <div 
+                    className={style.gubunbox}
+                    key={'qsd_Q'+idx}
+                    >
                         <div className={style.innergubun}>
                             <div className={style.gubun}>
                                 <span style={{
