@@ -11,6 +11,7 @@ import Benefit from '@/app/benefit/_components/Benefit';
 import Leaflet from '@/app/leaflet/_components/Leaflet';
 import VerifyComponents from '@/app/verify/_components/VerifyComponents';
 import Product from '@/app/_components/Product';
+import Goal2 from '@/app/_components/Goal2';
 
 export default function Intro() {
   const product1 ={
@@ -69,7 +70,7 @@ export default function Intro() {
             </div>
         </div>
       </div>
-      <Goal />
+      <Goal2 />
       <Benefit/>
       <Leaflet/>
       <Product data={product1}/>
