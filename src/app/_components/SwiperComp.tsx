@@ -50,9 +50,10 @@ export default function SwiperComp({imgs,auto, useHover, width, slidesPerView}:P
       // pagination={{ clickable: true }}
       autoplay={{
         delay: 2500,
-        disableOnInteraction:false // 스와이프 후에도 자동재생 유지
+        disableOnInteraction:false, // 스와이프 후에도 자동재생 유지
       }}
       loop={true}
+      
     >
       {imgs&&
         imgs.map((e,index)=>
@@ -70,10 +71,10 @@ export default function SwiperComp({imgs,auto, useHover, width, slidesPerView}:P
             {slidesPerView === 1 ? (
               <Image 
                 src={e.img} 
-                layout="responsive" 
-                width={100} // 비율 (가로 기준 100%)
-                height={35} // 비율 (세로 기준 35%)
-                objectFit="contain"
+                // layout="responsive" 
+                width ={1100} // 비율 (가로 기준 100%)
+                height={550} // 비율 (세로 기준 35%)
+                // objectFit="contain"
                 alt="image" 
               />
             ) : (

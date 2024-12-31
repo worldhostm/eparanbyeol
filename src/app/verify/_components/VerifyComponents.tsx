@@ -12,10 +12,13 @@ export default function VerifyComponents() {
       {
         label: 'Traffic Sources',
         data: [2.3,0,0,0,0,0], // 트래픽 소스의 비율
+        fill:true,
         borderColor: [
           'rgba(250, 0, 0, 1)',
         ],
+        borderWidth:0.5,
         pointRadius: 0,
+        backgroundColor:'rgba(250, 0, 0, 0.1)',
       },
       {
         label: 'Traffic Sources',
@@ -23,7 +26,10 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(54, 138, 255, 1)',
         ],
+        borderWidth:0.5,
         pointRadius: 0,
+        fill:true,
+        backgroundColor:'rgba(54, 138, 255, 0.1)',
       },
     ]
   };
@@ -37,6 +43,9 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(250, 0, 0, 1)',
         ],
+        borderWidth:0.5,
+        backgroundColor:'rgba(255,180,180,0.1)',
+        fill:true,
         pointRadius: 0,
       },
       {
@@ -45,6 +54,9 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(54, 138, 255, 1)',
         ],
+        borderWidth:0.5,
+        backgroundColor:'rgba(54, 138, 255, 0.1)',
+        fill:true,
         pointRadius: 0,
       },
     ]
@@ -60,6 +72,9 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(250, 0, 0, 1)',
         ],
+        borderWidth:0.5,
+        backgroundColor:'rgba(250, 0, 0, 0.1)',
+        fill:true,
         pointRadius: 0,
       },
       {
@@ -68,6 +83,9 @@ export default function VerifyComponents() {
         borderColor: [
           'rgba(54, 138, 255, 1)',
         ],
+        borderWidth:0.5,
+        backgroundColor:'rgba(54, 138, 255, 0.1)',
+        fill:true,
         pointRadius: 0,
       },
     ]
@@ -94,20 +112,31 @@ export default function VerifyComponents() {
       },
     ]
   };
+  
   const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: true, // 범례 표시
+      },
+    },
     scales: {
       x: {
-        type: 'category', // 카테고리 스케일
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'X-Axis Label',
+        },
       },
       y: {
-        type: 'linear', // linear 스케일
         beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Y-Axis Label',
+        },
       },
     },
-    layout:{
-      backgroundColor:'rgba(255 ,0 ,0 ,0)'
-    },
-  }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.pagetitle}>

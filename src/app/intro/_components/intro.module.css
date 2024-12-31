@@ -60,7 +60,7 @@
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Ensure exact centering */
     color: white; /* Set text color */
-    font-size: calc(30px + 1vw); /* Adjust text size as needed */
+    font-size: calc(50px + 1vw); /* Adjust text size as needed */
     text-align: center;
     font-family: 'Pretendard';
     z-index: 10; /* Higher z-index to ensure it appears above the video */

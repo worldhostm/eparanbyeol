@@ -3,6 +3,7 @@
 import React, { Fragment, useContext } from 'react'
 import Link from 'next/link'
 import styles from './header.module.css';
+import { usePathname } from 'next/navigation';
 
 export const menuArr = [
   {
@@ -44,8 +45,9 @@ export const menuArr = [
   // }
 ]
 export default function Header() {
-  
+  const path = usePathname();
   return (
+    path !== '/' &&
     <Fragment>
         <div className={styles.containerTop}>
           <div className={styles.container}>

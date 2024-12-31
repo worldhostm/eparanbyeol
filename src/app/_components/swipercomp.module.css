@@ -25,13 +25,16 @@
 .overimage > *{
   font-family: 'Pretendard';
 }
+.width100{
+  width: 100%;
+}
 .overimage{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  width: 300px;
+  width: 100%;
   height: inherit;
   position: absolute;
   z-index: 1;
